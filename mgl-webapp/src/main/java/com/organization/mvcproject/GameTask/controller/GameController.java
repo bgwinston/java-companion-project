@@ -1,5 +1,4 @@
-//TODO 1.0   package naming convention, improve package declaration
-package com.organization.mvcproject.MGL_Task1.controller;
+package com.organization.mvcproject.GameTask.controller;
 
 import java.util.List;
 
@@ -20,7 +19,7 @@ import com.organization.mvcproject.MGL_Task1.service.Game_Service;
 
 //TODO 1.0  follow java class naming, improve class name
 @Controller
-public class MGLTask1Controller {
+public class GameController {
 
 	//TODO 1.0 variable naming convention, improve reference name
 	@Autowired
