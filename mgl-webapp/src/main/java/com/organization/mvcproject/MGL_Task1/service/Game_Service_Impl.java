@@ -69,7 +69,7 @@ public class Game_Service_Impl implements GameService {
      * Remove them.
 	 * 
 	 */
-	public static Long getGameId() {
+	/*public static Long getGameId() {
 		return gameId;
 	}
 
@@ -91,6 +91,6 @@ public class Game_Service_Impl implements GameService {
 
 	public static void setGames(ArrayList<Game> games) {
 		Game_Service_Impl.games = games;
-	}
+	}*/
 
 }

@@ -11,7 +11,7 @@ public class Company {
 
 	private Long id;
 	private String name;
-	//TODO 1.0 this List doesn't need to be initialized at declaration. 
+	//TODO 1.0 this List doesn't need to be initialized at declaration. ---why-defaults to null
 	private List<Game> gamesMade = new ArrayList<Game>();
 
 	public Long getId() {
