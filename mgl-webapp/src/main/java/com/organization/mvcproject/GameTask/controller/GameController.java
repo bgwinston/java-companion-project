@@ -51,13 +51,11 @@ public class GameController {
 	 * TODO 2.0 (Separation of concerns) consider moving all controller endpoints that return a ResponseEntity into a @RestController.
 	 */
 	
-	//TODO 1.0 RequestMapping URL should follow RESTful.
 	@RequestMapping(value = "/game/list", method = RequestMethod.GET)
 	public ResponseEntity<List<Game>> fetchAllGames() {
 		return new ResponseEntity<List<Game>>(javaGameService.retrieveAllGames(), HttpStatus.OK);
 	}
 
-	//TODO 1.0 RequestMapping URL should follow RESTful convention
 	@RequestMapping(value = "/newGame", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Void> createGame(@RequestBody Game game) {
 		javaGameService.saveGame(game);

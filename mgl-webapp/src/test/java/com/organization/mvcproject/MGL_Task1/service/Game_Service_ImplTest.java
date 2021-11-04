@@ -38,8 +38,8 @@ class Game_Service_ImplTest {
 	private  static final String TEST_GENRE = "Test Genre";
 	private static Game createGame(Integer number) {
 		Game game = new Game();
-		 game.setGame_name("Testing Game Name " + String.valueOf(number));
-		 game.setGame_genre(TEST_GENRE);
+		 game.setName("Testing Game Name " + String.valueOf(number));
+		 game.setGenre(TEST_GENRE);
 		 return game;
 	}
 	
@@ -50,10 +50,10 @@ class Game_Service_ImplTest {
 	void saveGameServiceSavesAndUpdatesGame() {
 		if(gamesToRemoveAfterTest.isEmpty()) {
 			Game game = gameServiceUnderTest.saveGame(testGame);
-			assertNotNull(game.getGame_id());
+			assertNotNull(game.getId());
 			
 			//updates 
-			game.setGame_name("Testing Game Name Updated" );
+			game.setName("Testing Game Name Updated" );
 			testGame = gameServiceUnderTest.saveGame(game);
 			assertEquals(game, testGame);	
 			gamesToRemoveAfterTest.add(testGame);
