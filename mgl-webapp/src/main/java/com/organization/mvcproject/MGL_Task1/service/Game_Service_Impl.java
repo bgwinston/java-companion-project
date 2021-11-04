@@ -63,12 +63,7 @@ public class Game_Service_Impl implements GameService {
 		return game;
 	}
 
-	/**
-	 * TODO 1.0 the static methods below are either not related to a Game Service,
-     * are confused with methods found in the model, or duplicates. 
-     * Remove them.
-	 * 
-	 */
+
 	/*public static Long getGameId() {
 		return gameId;
 	}
